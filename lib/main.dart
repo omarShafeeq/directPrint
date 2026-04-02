@@ -14,6 +14,7 @@ import 'pc_download_stub.dart' if (dart.library.io) 'pc_download_io.dart' as pc_
 import 'web_print_stub.dart' if (dart.library.html) 'web_print_web.dart' as web_print;
 
 void main() {
+  // usePathUrlStrategy();
   runApp(const MyApp());
 }
 
