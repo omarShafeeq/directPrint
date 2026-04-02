@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter Web (silent print)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "args": [
+        "-d", "chrome",
+        "--web-browser-flag", "--kiosk-printing"
+      ],
+      "preLaunchTask": "Start CORS proxy"
+    },
+    {
+      "name": "Flutter Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "args": ["-d", "chrome"],
+      "preLaunchTask": "Start CORS proxy"
+    }
+  ]
+}
