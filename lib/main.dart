@@ -12,9 +12,10 @@ import 'package:printing/printing.dart';
 import 'download_stub.dart' if (dart.library.html) 'download_web.dart' as download;
 import 'pc_download_stub.dart' if (dart.library.io) 'pc_download_io.dart' as pc_download;
 import 'web_print_stub.dart' if (dart.library.html) 'web_print_web.dart' as web_print;
+import 'package:flutter_web_plugins/url_strategy.dart';
 
 void main() {
-  // usePathUrlStrategy();
+  usePathUrlStrategy();
   runApp(const MyApp());
 }
 
